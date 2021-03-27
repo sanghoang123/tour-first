@@ -472,11 +472,16 @@ a.slider__contain-btn:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: var(--width-video);
+    height: var(--heigth-video);
     outline: none;
 }
 
-.content__trailer-close {
+ .content__trailer-close {
     position: absolute;
+    top: 10%;
+    right: 10%;
+    transform: translate(-10%, -10%);
     right: calc((100% - var(--width-video)) / 2);
     top: calc((100% - var(--heigth-video)) / 3);
     color: var(--white-color);
