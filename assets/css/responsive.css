@@ -5,6 +5,13 @@
   }
 }
 
+/* > PC low resolution */
+/* @media (min-width: 64em) and (max-width: 77.4375em) {
+  .header__logo {
+      display: none;
+  }  
+} */
+
 /* Table & mobile */
 
 @media (max-width: 63.9375em) {

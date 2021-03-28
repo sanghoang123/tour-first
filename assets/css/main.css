@@ -472,8 +472,6 @@ a.slider__contain-btn:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: var(--width-video);
-    height: var(--heigth-video);
     outline: none;
 }
 
@@ -494,7 +492,7 @@ a.slider__contain-btn:hover {
 
 .content__detail {
     background-color: var(--black-color);
-    padding: 80px;
+    padding: 80px 0;
     margin-top: 78px;
 }
 
