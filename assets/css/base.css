@@ -1,0 +1,122 @@
+:root {
+    --white-color: #fff;
+    --primary-color: #f3a46b;
+    --black-color: #555;
+    --text-color: #727475;
+    --border-color: #f1f1f1;
+    --blue-color: #14b9d5;
+    --green-color: #1bbc9b;
+    --red-color: #ff6868;
+    --violet-color: #c755da;
+    --yellow-color: #ffd205;
+    --width-video: 900px;
+    --heigth-video: 500px
+    
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn--white {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.btn.btn--yellow {
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+}
+
+.btn.btn--yellow {
+    background-image: linear-gradient(to right, #ffca06, #ffa405);
+}
+
+.btn.btn--pink {
+    background-image: linear-gradient(to right, #f86c6f, #f78567);
+    color: var(--white-color);
+}
+
+.btn.btn--violet {
+    background-image: linear-gradient(to right, #c072cb, #d57188);
+}
+
+.btn.btn--blue {
+    background-image: linear-gradient(to right, #14bcd1, #14d1b7);
+}
+
+.btn.btn--size-l {
+    min-width: 240px;
+    min-height: 50px;
+    border-radius: 25px;
+    font-size: 2rem;
+}
+
+.navbar__mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    background-color: var(--primary-color);
+    animation: fadeIn linear 0.2s;
+    overflow-y: auto;
+    min-width: 320px;
+    max-width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rightInto {
+    fron {
+        right: -100%;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes leftInto {
+    fron {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
